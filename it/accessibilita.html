@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Accessibilità · Tu profe Luis</title>
+<meta name="description" content="Come è pensata l’accessibilità di tuprofeluis.com, cosa è stato fatto, cosa sto migliorando e come segnalarmi una barriera.">
+<link rel="canonical" href="https://tuprofeluis.com/it/accessibilita.html">
+<link rel="alternate" hreflang="es" href="https://tuprofeluis.com/accesibilidad.html">
+<link rel="alternate" hreflang="it" href="https://tuprofeluis.com/it/accessibilita.html">
+<link rel="alternate" hreflang="en" href="https://tuprofeluis.com/en/accessibility.html">
+<link rel="alternate" hreflang="x-default" href="https://tuprofeluis.com/accesibilidad.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Luis Fernández">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tu profe Luis">
+<meta property="og:title" content="Accessibilità · Tu profe Luis">
+<meta property="og:description" content="Come è pensata l’accessibilità di tuprofeluis.com, cosa è stato fatto, cosa sto migliorando e come segnalarmi una barriera.">
+<meta property="og:url" content="https://tuprofeluis.com/it/accessibilita.html">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:image" content="https://tuprofeluis.com/assets/img/og-it.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Accessibilità · Tu profe Luis">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F7F1E8">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/bricolage-grotesque-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/nunito-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/styles.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://tuprofeluis.com/#website","url":"https://tuprofeluis.com/","name":"Tu profe Luis","alternateName":"tuprofeluis.com","inLanguage":["es","it","en"],"publisher":{"@id":"https://tuprofeluis.com/#luis"}},{"@type":"Person","@id":"https://tuprofeluis.com/#luis","name":"Luis Fernández","jobTitle":"Insegnante di spagnolo","url":"https://tuprofeluis.com/it/chi-sono.html","image":"https://tuprofeluis.com/assets/img/luis-fernandez-profesor-espanol-880.jpg","email":"mailto:luisf.spanishlessons@gmail.com","telephone":"+39 366 905 0198","knowsLanguage":["es","it","en"],"homeLocation":{"@type":"Place","name":"Roma, Italia"},"birthPlace":{"@type":"Place","name":"Granada, España"}},{"@type":"WebPage","@id":"https://tuprofeluis.com/it/accessibilita.html#webpage","url":"https://tuprofeluis.com/it/accessibilita.html","name":"Accessibilità · Tu profe Luis","description":"Come è pensata l’accessibilità di tuprofeluis.com, cosa è stato fatto, cosa sto migliorando e come segnalarmi una barriera.","inLanguage":"it","isPartOf":{"@id":"https://tuprofeluis.com/#website"},"primaryImageOfPage":"https://tuprofeluis.com/assets/img/og-it.jpg","dateModified":"2026-10-18T09:00:00+02:00","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tuprofeluis.com/it/"},{"@type":"ListItem","position":2,"name":"Accessibilità","item":"https://tuprofeluis.com/it/accessibilita.html"}]}}]}</script>
+</head>
+<body>
+<a class="skip" href="#contenido">Salta al contenuto</a>
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="./" class="logo" aria-label="Tu profe Luis, home"><img src="../assets/img/logo.svg" alt="" width="190" height="38"></a>
+    <nav class="nav" aria-label="Principale">
+      <a href="./" class="navlink nl">Home</a>
+      <a href="lezioni.html" class="navlink nl">Lezioni</a>
+      <a href="test-di-livello.html" class="navlink nl">Test di livello</a>
+      <a href="pratica.html" class="navlink nl">Pratica</a>
+      <a href="chi-sono.html" class="navlink nl">Chi sono</a>
+      <span class="lang" role="group" aria-label="Lingua"><a href="../accesibilidad.html" lang="es" hreflang="es" title="Español">ES</a><span aria-current="true" lang="it">IT</span><a href="../en/accessibility.html" lang="en" hreflang="en" title="English">EN</a></span>
+      <button type="button" class="menubtn" id="menuBtn" aria-expanded="false" aria-controls="menuPanel">Menu
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path id="menuIco" d="M3 5 H15 M3 9 H15 M3 13 H15" fill="none" stroke="#1E4A52" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </button>
+    </nav>
+    <nav class="menupanel" id="menuPanel" aria-label="Menu" hidden>
+      <a href="./">Home</a>
+      <a href="lezioni.html">Lezioni</a>
+      <a href="test-di-livello.html">Test di livello</a>
+      <a href="pratica.html">Pratica</a>
+      <a href="chi-sono.html">Chi sono</a>
+      <span class="lang lang--menu" role="group" aria-label="Lingua"><a href="../accesibilidad.html" lang="es" hreflang="es" title="Español">ES</a><span aria-current="true" lang="it">IT</span><a href="../en/accessibility.html" lang="en" hreflang="en" title="English">EN</a></span>
+      <a href="https://wa.me/393669050198?text=Ciao%20Luis%2C%20vorrei%20prenotare%20la%20mia%20lezione%20di%20prova%20gratuita%20di%2030%20minuti." target="_blank" rel="noopener" class="cta cta--sm">Lezione di prova gratis →</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="phero phero--topic" aria-labelledby="t-a11y">
+  <div class="wrap">
+    <nav class="crumbs rise d1" aria-label="Sei qui"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Accessibilità</span></nav>
+    <h1 class="h1p rise d1" id="t-a11y">Accessibilità<span class="p">.</span></h1>
+    <p class="lede rise d3">Voglio che chiunque possa usare questo sito e imparare lo spagnolo, anche chi usa un lettore di schermo, naviga solo con la tastiera, ha bisogno di ingrandire il testo o preferisce meno movimento.</p>
+    <p class="cta-note rise d4">Ultima revisione: 18 ottobre 2026</p>
+  </div>
+</section>
+
+<section class="sec sec--paper" aria-label="Dichiarazione di accessibilità">
+  <div class="wrap legal">
+    <nav class="legal-toc reveal" aria-label="Indice">
+      <ol>
+        <li><a href="#compromiso">Il mio impegno</a></li>
+        <li><a href="#estandar">Standard di riferimento</a></li>
+        <li><a href="#hecho">Cosa funziona già</a></li>
+        <li><a href="#mejorando">Cosa sto migliorando</a></li>
+        <li><a href="#pruebas">Come lo verifico</a></li>
+        <li><a href="#contacto">Hai trovato una barriera?</a></li>
+      </ol>
+    </nav>
+    <div class="legal-body">
+      <h2 id="compromiso">Il mio impegno</h2>
+      <p>Imparare una lingua è già una sfida. Il sito non dovrebbe aggiungerne un’altra. Per questo lo progetto e lo sviluppo pensando all’accessibilità fin dall’inizio, non come un’aggiunta alla fine.</p>
+
+      <h2 id="estandar">Standard di riferimento</h2>
+      <p>L’obiettivo è rispettare le <a href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="noopener">Linee guida per l’accessibilità dei contenuti web (WCAG) 2.2</a>, livello AA. Oggi il sito è <b>in gran parte conforme</b>: qui sotto spiego cosa funziona già e cosa sto migliorando.</p>
+
+      <h2 id="hecho">Cosa funziona già</h2>
+      <ul><li><b>Tastiera:</b> tutto si può usare con Tab, Invio ed Esc, con il focus sempre visibile.</li><li><b>Salta al contenuto:</b> un link all’inizio di ogni pagina porta direttamente al contenuto principale.</li><li><b>Struttura chiara:</b> titoli in ordine, aree ben definite (intestazione, menu, contenuto, piè di pagina) e percorso di navigazione per orientarsi.</li><li><b>Immagini:</b> le foto hanno un testo alternativo; gli elementi decorativi sono nascosti ai lettori di schermo.</li><li><b>Contrasto:</b> i colori del testo sono stati verificati per raggiungere almeno 4,5:1.</li><li><b>Meno movimento:</b> se il tuo sistema chiede di ridurre il movimento, le animazioni si disattivano. La striscia animata dei falsi amici si può mettere in pausa.</li><li><b>Testo ingrandibile:</b> puoi fare zoom fino al 200% e il sito si adatta a schermi da 320 pixel senza scorrimento laterale.</li><li><b>Lingue:</b> ogni pagina dichiara la sua lingua, così i lettori di schermo usano la pronuncia corretta.</li><li><b>Test ed esercizi:</b> si fanno con la tastiera, senza limiti di tempo, e la correzione è spiegata con il testo, non solo con i colori.</li><li><b>Nessuna barriera in più:</b> niente captcha, moduli o registrazioni.</li><li><b>Cookie:</b> l’avviso si usa con la tastiera e si chiude con Esc.</li><li><b>Torna su:</b> un pulsante ti riporta all’inizio della pagina e ci sposta anche il focus della tastiera.</li></ul>
+
+      <h2 id="mejorando">Cosa sto migliorando</h2>
+      <p>L’accessibilità non finisce mai: è un lavoro continuo. In questo momento sto lavorando per:</p>
+      <ul><li>Segnare le frasi in spagnolo nelle versioni italiana e inglese, così il lettore di schermo le pronuncia in spagnolo.</li><li>Aggiungere un pulsante per saltare l’animazione di benvenuto della home.</li><li>Migliorare la visualizzazione nella modalità a contrasto elevato di Windows.</li><li>Rendere il test di livello ancora più chiaro con i lettori di schermo.</li></ul>
+      <p>Le recensioni dei miei studenti sono mostrate nella lingua originale, l’italiano, in tutte le versioni del sito.</p>
+
+      <h2 id="pruebas">Come lo verifico</h2>
+      <p>Controllo il sito con strumenti automatici di accessibilità e, soprattutto, a mano: navigando solo con la tastiera, con il lettore di schermo VoiceOver, con lo zoom e su schermi di dimensioni diverse. Ogni nuova modifica passa per gli stessi controlli.</p>
+
+      <h2 id="contacto">Hai trovato una barriera?</h2>
+      <p>Se qualcosa non funziona bene per te, dimmelo. Mi aiuti a migliorare e ti rispondo il prima possibile, con il contenuto in un altro formato se ti serve.</p>
+      <p>Email: <a href="mailto:luisf.spanishlessons@gmail.com">luisf.spanishlessons@gmail.com</a> · WhatsApp <a href="https://wa.me/393669050198" target="_blank" rel="noopener">+39 366 905 0198</a>.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="./" class="logo" aria-label="Tu profe Luis, home"><img src="../assets/img/logo-negativo.svg" alt="" width="210" height="42"></a>
+        <p style="margin-top:16px;max-width:300px">Lezioni private di spagnolo online, dall’A1 al C2. Da Roma, con l’accento di Granada.</p>
+      </div>
+      <nav aria-labelledby="f-nav"><h2 id="f-nav">Sito web</h2><ul><li><a href="./">Home</a></li><li><a href="lezioni.html">Lezioni e prezzi</a></li><li><a href="test-di-livello.html">Test di livello</a></li><li><a href="pratica.html">Pratica</a></li><li><a href="chi-sono.html">Chi sono</a></li></ul></nav>
+      <div><h2>Contatti</h2><ul><li><a href="https://wa.me/393669050198" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:luisf.spanishlessons@gmail.com">Email</a></li><li><a href="https://preply.in/LUIS6IT22050622102?ts=17923154" target="_blank" rel="noopener">Preply</a></li></ul></div>
+      <div><h2>Lingua</h2><span class="lang" role="group" aria-label="Lingua"><a href="../accesibilidad.html" lang="es" hreflang="es" title="Español">ES</a><span aria-current="true" lang="it">IT</span><a href="../en/accessibility.html" lang="en" hreflang="en" title="English">EN</a></span></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Tu profe Luis</span>
+      <span class="foot-legal"><a href="privacy.html">Privacy e cookie</a><a href="accessibilita.html">Accessibilità</a><button type="button" class="ghost cookie-link" data-cookie-prefs>Preferenze cookie</button></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

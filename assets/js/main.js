@@ -11,11 +11,11 @@
       ckNone: 'Rechazar', ckEss: 'Solo esenciales', ckAll: 'Aceptar todas',
       typing: 'escribiendo…', online: 'en línea', typingA: 'Luis está escribiendo', step: (n) => 'Paso ' + n + ' de 4', choose: 'Elige tu respuesta', top: 'Volver arriba' },
     it: { pause: 'Pausa', play: 'Riprendi', ckX: 'Chiudi e rifiuta', ckT: 'La tua privacy, prima di tutto',
-      ckD: 'Questo sito usa solo l’<b>essenziale</b> per funzionare e ricordare la tua scelta. Se accetti tutti, in futuro potrò misurare le visite in forma anonima per migliorarlo. Puoi cambiare idea quando vuoi. <a href="privacidad.html#cookies">Maggiori informazioni</a>',
+      ckD: 'Questo sito usa solo l’<b>essenziale</b> per funzionare e ricordare la tua scelta. Se accetti tutti, in futuro potrò misurare le visite in forma anonima per migliorarlo. Puoi cambiare idea quando vuoi. <a href="privacy.html#cookies">Maggiori informazioni</a>',
       ckNone: 'Rifiuta', ckEss: 'Solo essenziali', ckAll: 'Accetta tutti',
       typing: 'sta scrivendo…', online: 'online', typingA: 'Luis sta scrivendo', step: (n) => 'Passo ' + n + ' di 4', choose: 'Scegli la tua risposta', top: 'Torna su' },
     en: { pause: 'Pause', play: 'Play', ckX: 'Close and reject', ckT: 'Your privacy comes first',
-      ckD: 'This site only uses what is <b>essential</b> to work and to remember your choice. If you accept all, in the future I may measure visits anonymously to improve it. You can change your mind at any time. <a href="privacidad.html#cookies">More information</a>',
+      ckD: 'This site only uses what is <b>essential</b> to work and to remember your choice. If you accept all, in the future I may measure visits anonymously to improve it. You can change your mind at any time. <a href="privacy.html#cookies">More information</a>',
       ckNone: 'Reject', ckEss: 'Essential only', ckAll: 'Accept all',
       typing: 'typing…', online: 'online', typingA: 'Luis is typing', step: (n) => 'Step ' + n + ' of 4', choose: 'Choose your answer', top: 'Back to top' }
   };
@@ -348,7 +348,7 @@
       wa: 'Hola, Luis. Quiero reservar mi clase de prueba gratis de 30 minutos.', waGoal: ' Mi objetivo: ',
       waBtn: 'Reservar mi clase gratis por WhatsApp →', waSmall: '30 minutos · sin compromiso · eliges tú el día',
       noR: '¡Claro! Son 20 preguntas, unos 10 minutos. Y la clase gratis te espera cuando quieras.',
-      testBtn: 'Hacer el test de nivel →', rather: 'Mejor reservo la clase gratis'
+      testBtn: 'Hacer el test de nivel →', testUrl: 'test.html', rather: 'Mejor reservo la clase gratis'
     },
     it: {
       intro: [['Congratulazioni!… anche se credo che volessi dire ', ['«me da vergüenza»'], '. ', ['Embarazada'], ' = incinta.'],
@@ -368,7 +368,7 @@
       wa: 'Ciao Luis, vorrei prenotare la mia lezione di prova gratuita di 30 minuti.', waGoal: ' Il mio obiettivo: ',
       waBtn: 'Prenota la lezione gratis su WhatsApp →', waSmall: '30 minuti · senza impegno · scegli tu il giorno',
       noR: 'Certo! Sono 20 domande, circa 10 minuti. E la lezione gratis ti aspetta quando vuoi.',
-      testBtn: 'Fai il test di livello →', rather: 'Meglio prenotare la lezione gratis'
+      testBtn: 'Fai il test di livello →', testUrl: 'test-di-livello.html', rather: 'Meglio prenotare la lezione gratis'
     },
     en: {
       intro: [['Congratulations!… although I think you meant ', ['«me da vergüenza»'], '. ', ['Embarazada'], ' = pregnant, not embarrassed.'],
@@ -388,7 +388,7 @@
       wa: 'Hi Luis, I’d like to book my free 30-minute trial lesson.', waGoal: ' My goal: ',
       waBtn: 'Book my free lesson on WhatsApp →', waSmall: '30 minutes · no commitment · you choose the day',
       noR: 'Of course! It’s 20 questions, about 10 minutes. And the free lesson will be waiting whenever you like.',
-      testBtn: 'Take the level test →', rather: 'I’d rather book the free lesson'
+      testBtn: 'Take the level test →', testUrl: 'level-test.html', rather: 'I’d rather book the free lesson'
     }
   };
   const c = CH[LANG] || CH.es;
@@ -461,7 +461,7 @@
       box.append(a, el('small', null, c.waSmall));
     } else {
       if (!(await luis([[c.noR]], r))) return;
-      const a = el('a', 'chip', c.testBtn); a.href = 'test.html';
+      const a = el('a', 'chip', c.testBtn); a.href = c.testUrl;
       const b = el('button', 'ghost linkbtn', c.rather); b.type = 'button';
       b.addEventListener('click', () => book(true));
       box.append(a, b);

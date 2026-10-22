@@ -7,18 +7,18 @@
       is: (m, c) => '<em>' + m + '</em> es un marcador <b>' + c.toLowerCase() + '</b>:', next: 'Siguiente →', see: 'Ver resultado →', over: 'Partida terminada',
       of: (a, b) => a + ' de ' + b, msg: ['¡Nivel experto! ', '¡Muy bien! ', 'Buen trabajo. ', 'Sigue practicando. '],
       best: (n) => 'Tu mejor racha: ' + n + (n === 1 ? ' acierto seguido.' : ' aciertos seguidos.'),
-      hits: 'Aciertos', hitsL: 'aciertos', q: '¿Qué función tiene este marcador?', choose: 'Elige la función', result: 'Resultado', again: 'Jugar otra vez ↺', cta: 'Conviértelo en fluidez, en clase' },
+      hits: 'Aciertos', hitsL: 'aciertos', q: '¿Qué función tiene este marcador?', choose: 'Elige la función', result: 'Resultado', again: 'Jugar otra vez ↺', cta: 'Conviértelo en fluidez, en clase', url: 'clases.html' },
     it: { round: (a, b) => 'Round ' + a + ' di ' + b, streak: (n) => n + ' di fila!', ok: 'Giusto!', ko: 'Quasi.',
       is: (m, c) => '<em>' + m + '</em> appartiene ai <b>' + c + '</b>:', next: 'Avanti →', see: 'Vedi il risultato →', over: 'Partita finita',
       of: (a, b) => a + ' su ' + b, msg: ['Livello esperto! ', 'Molto bene! ', 'Buon lavoro. ', 'Continua ad allenarti. '],
       best: (n) => 'La tua serie migliore: ' + n + (n === 1 ? ' risposta giusta di fila.' : ' risposte giuste di fila.'),
-      hits: 'Risposte giuste', hitsL: 'giuste', q: 'Che funzione ha questo marcatore?', choose: 'Scegli la funzione', result: 'Risultato', again: 'Gioca ancora ↺', cta: 'Trasformalo in scioltezza, a lezione',
+      hits: 'Risposte giuste', hitsL: 'giuste', q: 'Che funzione ha questo marcatore?', choose: 'Scegli la funzione', result: 'Risultato', again: 'Gioca ancora ↺', cta: 'Trasformalo in scioltezza, a lezione', url: 'lezioni.html',
       f: ['Ordinano le parti del discorso.', 'Aggiungono informazioni nella stessa direzione argomentativa.', 'Introducono un’idea che si oppone a quella precedente o la limita.', 'Ammettono un’obiezione che non impedisce quanto affermato.', 'Presentano una conseguenza di quanto detto.', 'Spiegano la causa o il motivo.', 'Chiariscono, correggono o riassumono quanto detto prima.', 'Introducono un esempio che illustra l’idea.', 'Chiudono o ricapitolano il discorso.', 'Esprimono il punto di vista o il grado di certezza.', 'Collocano e mettono in sequenza i fatti nel tempo.', 'Gestiscono l’interazione orale: prendono il turno, chiedono attenzione o sfumano.'] },
     en: { round: (a, b) => 'Round ' + a + ' of ' + b, streak: (n) => n + ' in a row!', ok: 'Correct!', ko: 'Almost.',
       is: (m, c) => '<em>' + m + '</em> belongs to the <b>' + c + '</b>:', next: 'Next →', see: 'See my result →', over: 'Game over',
       of: (a, b) => a + ' of ' + b, msg: ['Expert level! ', 'Very good! ', 'Good job. ', 'Keep practising. '],
       best: (n) => 'Your best streak: ' + n + (n === 1 ? ' right answer in a row.' : ' right answers in a row.'),
-      hits: 'Right answers', hitsL: 'right', q: 'What does this marker do?', choose: 'Choose the function', result: 'Result', again: 'Play again ↺', cta: 'Turn it into fluency, in class',
+      hits: 'Right answers', hitsL: 'right', q: 'What does this marker do?', choose: 'Choose the function', result: 'Result', again: 'Play again ↺', cta: 'Turn it into fluency, in class', url: 'lessons.html',
       f: ['They order the parts of a text or speech.', 'They add information in the same line of argument.', 'They introduce an idea that opposes or limits the previous one.', 'They admit an objection that doesn’t cancel what is said.', 'They present a consequence of what has been said.', 'They explain the cause or reason.', 'They clarify, correct or sum up what came before.', 'They introduce an example that illustrates the idea.', 'They close or sum up the discourse.', 'They express a point of view or a degree of certainty.', 'They place and sequence events in time.', 'They manage spoken interaction: taking the turn, asking for attention or softening.'] }
   };
   const t = TX[LANG] || TX.es;
@@ -113,7 +113,7 @@
       <p class="ex-msg"></p>
       <div class="res-actions">
         <button type="button" class="btn-line g-again">${t.again}</button>
-        <a class="more" href="clases.html">${t.cta} <span aria-hidden="true">→</span></a>
+        <a class="more" href="${t.url}">${t.cta} <span aria-hidden="true">→</span></a>
       </div>
     </div>`;
   $('.ex-next').addEventListener('click', () => { if (i < ROUNDS - 1) { i++; render(); } else end(); });
